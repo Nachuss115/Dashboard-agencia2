@@ -1,5 +1,28 @@
 <div class="carga-en-recepcion">
-    <h2>Carga en recepción</h2>
-    <!-- Aquí va el contenido de la sección "Carga en recepción" -->
+  <h2>Carga en recepción</h2>
+
+  <div class="recepcion-container">
+    <button class="recepcion-btn" (click)="onItemClick('recepcionado', 0)">Recepcionado</button>
+    <button class="clasificacion-btn" (click)="onItemClick('clasificacion', 1)">Clasificación</button>
+    <button class="clasificacion-reparto-btn" (click)="onItemClick('clasificacion-reparto', 2)">Clasificación Reparto</button>
   </div>
-  
+  <div class="resumen">
+    <h2>Resumen</h2>
+    <div class="resumen-container">
+      <div class="recepcionado-resumen-box">
+        <h3>ODTs Recepcionado</h3>
+        <!-- Aquí va el contenido de la sección "ODTs Recepcionado" en modo resumen -->
+      </div>
+      <div class="clasificacion-resumen-container">
+        <div class="clasificacion-resumen-box">
+          <h3>ODTs Clasificado</h3>
+          <!-- Aquí va el contenido de la sección "ODTs Clasificado" en modo resumen -->
+        </div>
+        <div class="clasificacion-reparto-resumen-box">
+          <h3>ODTs Clasificación Reparto</h3>
+          <!-- Aquí va el contenido de la sección "ODTs Clasificación Reparto" en modo resumen -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

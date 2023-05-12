@@ -12,6 +12,9 @@ import { CargaPorEnviarComponent } from './dashboard/carga-por-enviar/carga-por-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgChartsModule } from 'ng2-charts';
 import { ManifiestoDetalleComponent } from './dashboard/carga-por-llegar/manifiesto-detalle/manifiesto-detalle.component';
+import { DetalleRecepcionadoComponent } from './dashboard/carga-en-recepcion/detalle-recepcionado/detalle-recepcionado.component';
+import { DetalleClasificacionComponent } from './dashboard/carga-en-recepcion/detalle-clasificacion/detalle-clasificacion.component';
+import { DetalleClasificacionRepartoComponent } from './dashboard/carga-en-recepcion/detalle-clasificacion-reparto/detalle-clasificacion-reparto.component';
 //import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
@@ -23,6 +26,9 @@ import { ManifiestoDetalleComponent } from './dashboard/carga-por-llegar/manifie
     CargaEnRecepcionComponent,
     CargaPorEnviarComponent,
     ManifiestoDetalleComponent,
+    DetalleRecepcionadoComponent,
+    DetalleClasificacionComponent,
+    DetalleClasificacionRepartoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, NgChartsModule],
   providers: [],

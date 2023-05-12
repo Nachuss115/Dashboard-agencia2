@@ -33,6 +33,8 @@ h2 {
   
   .total-box {
     border: 1px solid #ccc;
+    background-color: #ff8400;
+    color: white;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;

@@ -51,7 +51,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     }, 1000);
 
 
-    this.odtSinEnviar = 5; // Reemplaza este valor por el número real de ODTs sin enviar
+    this.odtSinEnviar = 25; // Reemplaza este valor por el número real de ODTs sin enviar
   }
 
   ngOnDestroy() {

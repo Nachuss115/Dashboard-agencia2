@@ -5,7 +5,6 @@ import { ManifiestoService } from 'src/app/services/manifiesto.service';
 import { ChartOptions, Chart, registerables } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-
 @Component({
   selector: 'app-carga-por-llegar',
   templateUrl: './carga-por-llegar.component.html',
@@ -51,8 +50,6 @@ export class CargaPorLlegarComponent implements OnInit {
   totalPeso = 0;
   totalBultos = 0;
   totalVolumen = 0;
-
-
 
   pieChartOptions: ChartOptions = {
     responsive: true,
@@ -105,25 +102,23 @@ export class CargaPorLlegarComponent implements OnInit {
     //const odtCounts = this.manifiestoService.countODTsByFormaPago();
     //this.pieChartData[0].data = [odtCounts.contado, odtCounts.porPagar];
 
-
     const odtCounts = this.manifiestoService.countODTsByFormaPago();
     const totalODTs = odtCounts.contado + odtCounts.porPagar;
     const contadoPercentage = (odtCounts.contado / totalODTs) * 100;
     const porPagarPercentage = (odtCounts.porPagar / totalODTs) * 100;
-    //this.pieChartData[0].data = [contadoPercentage, porPagarPercentage];
-    this.pieChartData[0].data = [odtCounts.contado, odtCounts.porPagar];
+    this.pieChartData[0].data = [contadoPercentage, porPagarPercentage];
+    //this.pieChartData[0].data = [odtCounts.contado, odtCounts.porPagar];
   }
 
   ngOnInit(): void {
-    this.cargas = this.manifiestoService.getManifiestos().map(manifiesto => ({
+    this.cargas = this.manifiestoService.getManifiestos().map((manifiesto) => ({
       manifiesto: manifiesto.id,
       chofer: manifiesto.chofer,
       patente: manifiesto.patente,
       cantidadODT: manifiesto.totalODTs || 0, // Proporciona un valor predeterminado de 0 si totalCantidad es undefined
       cantidadBulto: manifiesto.totalBultos || 0, // Proporciona un valor predeterminado de 0 si totalBultos es undefined
-      rutaCamion: manifiesto.rutaCamion
+      rutaCamion: manifiesto.rutaCamion,
     }));
-
 
     Chart.register(ChartDataLabels);
     Chart.register(...registerables);
