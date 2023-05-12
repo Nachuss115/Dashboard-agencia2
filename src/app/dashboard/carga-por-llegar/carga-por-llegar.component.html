@@ -38,12 +38,21 @@
       <h3>Total:</h3>
       <div class="totals-box">
         <div class="total-box">
-          <strong>Valor de Carga:</strong> {{ totalValorCarga }}
+          <!-- .toLocaleString('es-CL') el valor de carga se mostrará con puntos como separadores de miles. -->
+          <strong>Valor de Carga : </strong
+          ><span class="total-number">$ {{ totalValorCarga.toLocaleString('es-CL') }}</span>  
         </div>
-        <div class="total-box"><strong>Peso (KG):</strong> {{ totalPeso }}</div>
-        <div class="total-box"><strong>Bultos:</strong> {{ totalBultos }}</div>
         <div class="total-box">
-          <strong>Volumen:</strong> {{ totalVolumen }}
+          <strong>Peso (KG) : </strong
+          ><span class="total-number">{{ totalPeso }}</span>
+        </div>
+        <div class="total-box">
+          <strong>Bultos : </strong
+          ><span class="total-number">{{ totalBultos }}</span>
+        </div>
+        <div class="total-box">
+          <strong>Volumen : </strong
+          ><span class="total-number">{{ totalVolumen }}</span>
         </div>
       </div>
     </div>

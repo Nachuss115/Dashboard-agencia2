@@ -87,7 +87,7 @@ export class CargaPorLlegarComponent implements OnInit {
   calculateTotals() {
     // Aquí podrás agregar el cálculo de los totales en función de tus datos de carga
     // Ejemplo:
-    this.totalValorCarga = 10000;
+    this.totalValorCarga = 150000;
     this.totalPeso = 1500;
     this.totalBultos = 40;
     this.totalVolumen = 250;
