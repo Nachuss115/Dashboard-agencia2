@@ -92,3 +92,12 @@ h2 {
 .clasificacion-reparto-btn:hover {
   background-color: #ff8400;
 }
+
+.valores-cuadros{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+

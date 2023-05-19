@@ -38,6 +38,21 @@ const routes: Routes = [
         component: DetalleClasificacionRepartoComponent,
       },
       { path: 'carga-por-enviar', component: CargaPorEnviarComponent },
+      {
+        path: 'recepcionado',
+        component: DetalleRecepcionadoComponent,
+        data: { buttonIndex: 0 },
+      },
+      {
+        path: 'clasificacion',
+        component: DetalleClasificacionComponent,
+        data: { buttonIndex: 1 },
+      },
+      {
+        path: 'clasificacion-reparto',
+        component: DetalleClasificacionRepartoComponent,
+        data: { buttonIndex: 2 },
+      },
     ],
   },
 ];

@@ -1,0 +1,6 @@
+<div class="recepcion-container">
+    <button class="recepcion-btn" [class.selected]="selectedButton === 0" (click)="onItemClick('recepcionado', 0)">Recepcionado</button>
+    <button class="clasificacion-btn" [class.selected]="selectedButton === 1" (click)="onItemClick('clasificacion', 1)">Clasificación</button>
+    <button class="clasificacion-reparto-btn" [class.selected]="selectedButton === 2" (click)="onItemClick('clasificacion-reparto', 2)">Clasificación Reparto</button>
+  </div>
+  

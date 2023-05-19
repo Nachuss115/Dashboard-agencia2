@@ -1,0 +1,27 @@
+.recepcion-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .recepcion-btn,
+  .clasificacion-btn,
+  .clasificacion-reparto-btn {
+    background-color: #ff8400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .recepcion-btn:hover,
+  .clasificacion-btn:hover,
+  .clasificacion-reparto-btn:hover {
+    background-color: #ff8400;
+  }
+  
+  .selected {
+    background-color: #007bff;
+  }
+  

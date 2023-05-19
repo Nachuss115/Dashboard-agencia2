@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-detalle-clasificacion',
@@ -7,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class DetalleClasificacionComponent {
 
+
+  constructor(private router: Router) {}
+
+  onItemClick(type: string, index: number) {
+    this.router.navigate([`/dashboard/carga-en-recepcion/${type}/${index}`]);
+  }
+  
 }

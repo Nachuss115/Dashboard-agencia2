@@ -30,6 +30,7 @@ export class CargaEnRecepcionComponent implements OnInit {
   onItemClick(type: string, index: number) {
     this.selectedItemId = index;
     this.router.navigate([`dashboard/carga-en-recepcion/${type}/${index}`]);
+    
   }
   
   
